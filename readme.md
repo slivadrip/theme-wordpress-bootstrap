@@ -1,0 +1,7 @@
+#Alterar os links da table de wp_options
+
+UPDATE wp_posts SET post_content = REPLACE(post_content, 'localhost/curso/', 'www.seusite.com/');
+
+#Plugins
+
+Responsive Menu

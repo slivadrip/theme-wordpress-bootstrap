@@ -14,6 +14,10 @@ function carrega_scripts(){
 	// Enfileirando estilos e scripts próprios
 	wp_enqueue_style( 'template', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0', 'all');
 	wp_enqueue_script( 'template', get_template_directory_uri(). '/assets/js/template.js', array(), null, true);	
+
+	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/d0a31ddfa9.js', array(), null, true);	
+
+	
 }
 add_action( 'wp_enqueue_scripts', 'carrega_scripts' );
 
@@ -32,8 +36,8 @@ add_theme_support('post-thumbnails');
 add_theme_support('post-formats', array('video', 'image'));
 add_theme_support('html5', array('search-form'));
 add_theme_support('custom-logo', array(
-	'height'	=> 52,
-	'width'		=> 324
+	'height'	=> 55,
+	'width'		=> 200
 ));
 
 // Registrando sidebars
