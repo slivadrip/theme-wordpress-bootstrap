@@ -7,6 +7,7 @@ remove_action('wp_head','wp_generator');
 
 // Função para carregamento dos scripts
 function carrega_scripts(){
+
 	// Enfileirando Bootstrap
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() .'/assets/css/bootstrap.min.css', array(), '', 'all');
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() .'/assets/js/bootstrap.bundle.min.js', array('jquery'), null, true);	
@@ -15,11 +16,13 @@ function carrega_scripts(){
 	wp_enqueue_style( 'template', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0', 'all');
 	wp_enqueue_script( 'template', get_template_directory_uri(). '/assets/js/template.js', array(), null, true);	
 
+	// Enfileirando fontawesome
 	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/d0a31ddfa9.js', array(), null, true);	
 
 	
 }
 add_action( 'wp_enqueue_scripts', 'carrega_scripts' );
+
 
 // Função para registro de nossos menus
 register_nav_menus(
@@ -40,6 +43,7 @@ add_theme_support('custom-logo', array(
 	'width'		=> 200
 ));
 
+
 // Registrando sidebars
 if (function_exists('register_sidebar')){
 	register_sidebar(
@@ -58,17 +62,6 @@ if (function_exists('register_sidebar')){
 			'name'		=> 'Barra Lateral 2',
 			'id'		=> 'sidebar-2',
 			'description'	=> 'Barra lateral da página blog',
-			'before_widget'	=> '<div class="widget-wrapper">',
-			'after_widget'	=> '</div>',
-			'before_title'	=> '<h2 class="widget-titulo">',
-			'after_title'	=> '</h2>',			
-		)
-	);
-	register_sidebar(
-		array(
-			'name'		=> 'Redes Sociais',
-			'id'		=> 'redes-sociais',
-			'description'	=> 'Widgets para redes sociais',
 			'before_widget'	=> '<div class="widget-wrapper">',
 			'after_widget'	=> '</div>',
 			'before_title'	=> '<h2 class="widget-titulo">',

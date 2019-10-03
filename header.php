@@ -7,14 +7,10 @@
   <meta name="description" content="<?php bloginfo('description'); ?>">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
-
   <?php wp_head(); ?>
   
 </head>
 <body <?php body_class(); ?>>
-  <!--==========================
-  Header
-  ============================-->
   <header id="header" class="fixed-top">
     <div class="container">
 

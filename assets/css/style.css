@@ -431,6 +431,7 @@ color: #fff;
   margin-bottom: 0;
   font-family: "Montserrat", sans-serif;
   color: #ecf5ff;
+  text-align: justify;
 }
 
 #footer .footer-top .social-links a {
@@ -498,6 +499,7 @@ color: #fff;
 
 #footer .footer-top .footer-newsletter {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 #footer .footer-top .footer-newsletter input[type="email"] {

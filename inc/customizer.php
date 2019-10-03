@@ -23,7 +23,7 @@ function meupersonalizador($wp_customize){
 
 
 	// Seção Serviços
-
+	/*
 	$wp_customize->add_section( 'sec_servicos', array(
 		'title'			=> 'Serviços',
 		'description'	=> 'Seção para os serviços'
@@ -152,5 +152,6 @@ function meupersonalizador($wp_customize){
 		'section'	=> 'sec_servicos',
 		'settings'	=> 'set_servicos3'
 	)));	
+	*/
 }
 add_action( 'customize_register', 'meupersonalizador' );
